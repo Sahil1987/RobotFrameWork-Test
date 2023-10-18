@@ -2,8 +2,6 @@
 Resource    ../YahooPageResource/YahooFinancePageKeywords.robot
 
 *** Variables ***
-#Registration Form Values
-
 ${FIRST_NAME}   TAN
 ${LAST_NAME}    ZAN
 ${EMAIL}        ten_2337

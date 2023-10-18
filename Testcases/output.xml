@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.8.2 on win32)" generated="20231018 15:59:21.886" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.8.2 on win32)" generated="20231018 16:22:10.615" rpa="false" schemaversion="4">
 <suite id="s1" name="YahooFinanceTest" source="C:\Users\acer\PycharmProjects\RobotFrameWork-Test\Testcases\YahooFinanceTest.robot">
-<test id="s1-t1" name="Create Yahoo Finance Account" line="17">
+<test id="s1-t1" name="Create Yahoo Finance Account" line="15">
 <kw name="Yahoo Finance Page Signup" library="YahooFinancePageKeywords">
 <kw name="Open Yahoo Finance" library="YahooFinancePageKeywords">
 <arg>${URL}</arg>
@@ -10,48 +10,48 @@
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231018 15:59:22.224" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com/'.</msg>
-<msg timestamp="20231018 15:59:23.084" level="WARN">The chromedriver version (117.0.5938.92) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20231018 15:59:22.224" endtime="20231018 15:59:50.597"/>
+<msg timestamp="20231018 16:22:10.883" level="INFO">Opening browser 'chrome' to base url 'https://finance.yahoo.com/'.</msg>
+<msg timestamp="20231018 16:22:11.970" level="WARN">The chromedriver version (117.0.5938.92) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20231018 16:22:10.883" endtime="20231018 16:22:43.259"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231018 15:59:50.597" endtime="20231018 15:59:50.735"/>
+<status status="PASS" starttime="20231018 16:22:43.259" endtime="20231018 16:22:43.389"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:22.224" endtime="20231018 15:59:50.736"/>
+<status status="PASS" starttime="20231018 16:22:10.883" endtime="20231018 16:22:43.389"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${link_signIn}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231018 15:59:50.736" endtime="20231018 15:59:50.786"/>
+<status status="PASS" starttime="20231018 16:22:43.390" endtime="20231018 16:22:43.433"/>
 </kw>
 <kw name="Click Sign In Link" library="YahooFinancePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${link_signIn}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:50.786" level="INFO">Clicking link 'xpath://a[@id='header-signin-link']'.</msg>
-<status status="PASS" starttime="20231018 15:59:50.786" endtime="20231018 15:59:52.700"/>
+<msg timestamp="20231018 16:22:43.435" level="INFO">Clicking link 'xpath://a[@id='header-signin-link']'.</msg>
+<status status="PASS" starttime="20231018 16:22:43.434" endtime="20231018 16:22:46.146"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:50.786" endtime="20231018 15:59:52.700"/>
+<status status="PASS" starttime="20231018 16:22:43.433" endtime="20231018 16:22:46.146"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${btn_createacc}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231018 15:59:52.700" endtime="20231018 15:59:52.725"/>
+<status status="PASS" starttime="20231018 16:22:46.147" endtime="20231018 16:22:46.155"/>
 </kw>
 <kw name="Click Create an Account Link" library="YahooFinancePageKeywords">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${btn_createacc}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:52.726" level="INFO">Clicking link 'id:createacc'.</msg>
-<status status="PASS" starttime="20231018 15:59:52.726" endtime="20231018 15:59:53.118"/>
+<msg timestamp="20231018 16:22:46.171" level="INFO">Clicking link 'id:createacc'.</msg>
+<status status="PASS" starttime="20231018 16:22:46.171" endtime="20231018 16:22:47.045"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:52.726" endtime="20231018 15:59:53.118"/>
+<status status="PASS" starttime="20231018 16:22:46.155" endtime="20231018 16:22:47.045"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${dob_month}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231018 15:59:53.118" endtime="20231018 15:59:53.138"/>
+<status status="PASS" starttime="20231018 16:22:47.046" endtime="20231018 16:22:47.057"/>
 </kw>
 <kw name="Fill Registration Form" library="YahooFinancePageKeywords">
 <arg>${FIRST_NAME}</arg>
@@ -65,73 +65,73 @@
 <arg>${txt_firstName}</arg>
 <arg>${FIRST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.138" level="INFO">Typing text 'TAN' into text field 'id:usernamereg-firstName'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.138" endtime="20231018 15:59:53.254"/>
+<msg timestamp="20231018 16:22:47.059" level="INFO">Typing text 'TAN' into text field 'id:usernamereg-firstName'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.058" endtime="20231018 16:22:47.144"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_lastName}</arg>
 <arg>${LAST_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.254" level="INFO">Typing text 'ZAN' into text field 'id:usernamereg-lastName'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.254" endtime="20231018 15:59:53.335"/>
+<msg timestamp="20231018 16:22:47.144" level="INFO">Typing text 'ZAN' into text field 'id:usernamereg-lastName'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.144" endtime="20231018 16:22:47.209"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_emailuserId}</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.335" level="INFO">Typing text 'ten_2337' into text field 'name:userId'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.335" endtime="20231018 15:59:53.419"/>
+<msg timestamp="20231018 16:22:47.222" level="INFO">Typing text 'ten_2337' into text field 'name:userId'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.209" endtime="20231018 16:22:47.306"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${txt_password}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.420" level="INFO">Typing text 'Querty#678' into text field 'id:usernamereg-password'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.419" endtime="20231018 15:59:53.510"/>
+<msg timestamp="20231018 16:22:47.307" level="INFO">Typing text 'Querty#678' into text field 'id:usernamereg-password'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.306" endtime="20231018 16:22:47.384"/>
 </kw>
 <kw name="Select From List By Label" library="SeleniumLibrary">
 <arg>${dob_month}</arg>
 <arg>${DOB_MON}</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20231018 15:59:53.510" level="INFO">Selecting options from selection list 'id:usernamereg-month' by label January.</msg>
-<status status="PASS" starttime="20231018 15:59:53.510" endtime="20231018 15:59:53.615"/>
+<msg timestamp="20231018 16:22:47.384" level="INFO">Selecting options from selection list 'id:usernamereg-month' by label January.</msg>
+<status status="PASS" starttime="20231018 16:22:47.384" endtime="20231018 16:22:47.452"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${dob_day}</arg>
 <arg>${DOB_DA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.615" level="INFO">Typing text '21' into text field 'id:usernamereg-day'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.615" endtime="20231018 15:59:53.683"/>
+<msg timestamp="20231018 16:22:47.454" level="INFO">Typing text '21' into text field 'id:usernamereg-day'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.452" endtime="20231018 16:22:47.523"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${dob_year}</arg>
 <arg>${DOB_YR}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:53.683" level="INFO">Typing text '1989' into text field 'id:usernamereg-year'.</msg>
-<status status="PASS" starttime="20231018 15:59:53.683" endtime="20231018 15:59:53.758"/>
+<msg timestamp="20231018 16:22:47.523" level="INFO">Typing text '1989' into text field 'id:usernamereg-year'.</msg>
+<status status="PASS" starttime="20231018 16:22:47.523" endtime="20231018 16:22:47.589"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:53.138" endtime="20231018 15:59:53.758"/>
+<status status="PASS" starttime="20231018 16:22:47.057" endtime="20231018 16:22:47.590"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231018 15:59:58.758" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231018 15:59:53.758" endtime="20231018 15:59:58.758"/>
+<msg timestamp="20231018 16:22:52.597" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231018 16:22:47.590" endtime="20231018 16:22:52.597"/>
 </kw>
 <kw name="Submit Registration Form" library="YahooFinancePageKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_continue}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231018 15:59:58.759" level="INFO">Clicking button 'id:reg-submit-button'.</msg>
-<status status="PASS" starttime="20231018 15:59:58.759" endtime="20231018 16:00:00.388"/>
+<msg timestamp="20231018 16:22:52.598" level="INFO">Clicking button 'id:reg-submit-button'.</msg>
+<status status="PASS" starttime="20231018 16:22:52.597" endtime="20231018 16:22:54.568"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:58.759" endtime="20231018 16:00:00.389"/>
+<status status="PASS" starttime="20231018 16:22:52.597" endtime="20231018 16:22:54.568"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20231018 16:00:05.394" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20231018 16:00:00.389" endtime="20231018 16:00:05.395"/>
+<msg timestamp="20231018 16:22:59.575" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231018 16:22:54.568" endtime="20231018 16:22:59.577"/>
 </kw>
 <kw name="Mobile Verification" library="YahooFinancePageKeywords">
 <arg>${MOBILE_NUM}</arg>
@@ -139,22 +139,22 @@
 <arg>${txt_mobilenumber}</arg>
 <arg>${MOBILE_NUM}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231018 16:00:05.395" level="INFO">Typing text '9898989898' into text field 'id:usernamereg-phone'.</msg>
-<status status="PASS" starttime="20231018 16:00:05.395" endtime="20231018 16:00:05.473"/>
+<msg timestamp="20231018 16:22:59.577" level="INFO">Typing text '9898989898' into text field 'id:usernamereg-phone'.</msg>
+<status status="PASS" starttime="20231018 16:22:59.577" endtime="20231018 16:22:59.665"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${btn_sendcode}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20231018 16:00:05.473" level="INFO">Clicking button 'id:reg-submit-button'.</msg>
-<status status="PASS" starttime="20231018 16:00:05.473" endtime="20231018 16:00:05.823"/>
+<msg timestamp="20231018 16:22:59.667" level="INFO">Clicking button 'id:reg-submit-button'.</msg>
+<status status="PASS" starttime="20231018 16:22:59.665" endtime="20231018 16:23:00.397"/>
 </kw>
-<status status="PASS" starttime="20231018 16:00:05.395" endtime="20231018 16:00:05.823"/>
+<status status="PASS" starttime="20231018 16:22:59.577" endtime="20231018 16:23:00.398"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:22.224" endtime="20231018 16:00:05.823"/>
+<status status="PASS" starttime="20231018 16:22:10.883" endtime="20231018 16:23:00.398"/>
 </kw>
-<status status="PASS" starttime="20231018 15:59:22.224" endtime="20231018 16:00:05.823"/>
+<status status="PASS" starttime="20231018 16:22:10.883" endtime="20231018 16:23:00.398"/>
 </test>
-<status status="PASS" starttime="20231018 15:59:21.886" endtime="20231018 16:00:05.825"/>
+<status status="PASS" starttime="20231018 16:22:10.615" endtime="20231018 16:23:00.399"/>
 </suite>
 <statistics>
 <total>
@@ -167,7 +167,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231018 15:59:22.224" level="ERROR">Error in file 'C:\Users\acer\PycharmProjects\RobotFrameWork-Test\YahooPageResource\YahooFinancePageKeywords.robot' on line 5: Error in file 'C:\Users\acer\PycharmProjects\RobotFrameWork-Test\Testcases\YahooFinanceTest.robot' on line 16: Resource file with 'Test Cases' section is invalid.</msg>
-<msg timestamp="20231018 15:59:23.084" level="WARN">The chromedriver version (117.0.5938.92) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20231018 16:22:10.866" level="ERROR">Error in file 'C:\Users\acer\PycharmProjects\RobotFrameWork-Test\YahooPageResource\YahooFinancePageKeywords.robot' on line 5: Error in file 'C:\Users\acer\PycharmProjects\RobotFrameWork-Test\Testcases\YahooFinanceTest.robot' on line 14: Resource file with 'Test Cases' section is invalid.</msg>
+<msg timestamp="20231018 16:22:11.970" level="WARN">The chromedriver version (117.0.5938.92) detected in PATH at C:\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
