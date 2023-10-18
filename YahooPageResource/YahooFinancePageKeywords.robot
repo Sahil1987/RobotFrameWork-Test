@@ -51,7 +51,11 @@ Yahoo Finance Page Signup
     Submit Registration Form
     sleep    5s
     Mobile Verification     ${MOBILE_NUM}
+    sleep   5s
 
+    #Validate Error Message
+    ${actual_Text}    Get Text  ${txt_errormsg}
+    should contain    ${actual_Text}    There are already accounts associated with this phone number. Please use a different one.
 
 
 

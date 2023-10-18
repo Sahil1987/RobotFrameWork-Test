@@ -16,3 +16,4 @@ btn_continue="id:reg-submit-button"
 # Mobile Verification Page Elements
 txt_mobilenumber = "id:usernamereg-phone"
 btn_sendcode = "id:reg-submit-button"
+txt_errormsg = "xpath://div[@id='reg-error-phone']"
