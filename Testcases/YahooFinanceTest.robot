@@ -15,4 +15,3 @@ ${MOBILE_NUM}   9898989898
 Create Yahoo Finance Account
     Yahoo Finance Page Signup
 
-
