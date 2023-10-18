@@ -1,22 +1,18 @@
 *** Settings ***
-
 Library     SeleniumLibrary
 Variables    ../PageLocators/YahooFinancePageLocators.py
 Resource    ../Testcases/YahooFinanceTest.robot
 
 *** Variables ***
-
 ${URL}            https://finance.yahoo.com/
 ${browser}        chrome
 
 
 *** Keywords ***
-
 Open Yahoo Finance
     [Arguments]    ${URL}   ${browser}
     Open Browser    ${URL}   ${browser}
     maximize browser window
-
 
 Click Sign In Link
     Click Link      ${link_signIn}
